@@ -22,7 +22,6 @@ function complete() {
 }
 
 // Show New Quote
-
 let newQuote = () => {
   const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)]
   loading()
@@ -52,8 +51,8 @@ async function getQuotes() {
     
     newQuote()
   } catch (error) {
-    
     // Catch Error Here
+    console.log('No quote', error)
   }
 }
 
